@@ -1,0 +1,12 @@
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\bin\Debug\net6.0\Mathematicaltables.deps.json
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\bin\Debug\net6.0\Mathematicaltables.dll
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\bin\Debug\net6.0\Mathematicaltables.pdb
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.csproj.AssemblyReference.cache
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.AssemblyInfoInputs.cache
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.AssemblyInfo.cs
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.csproj.CoreCompileInputs.cache
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.dll
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\refint\Mathematicaltables.dll
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\Mathematicaltables.pdb
+D:\Dot net prgm\Arithmeticoperations\Mathematicaltables\obj\Debug\net6.0\ref\Mathematicaltables.dll
