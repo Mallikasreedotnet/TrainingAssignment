@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header>h4{
+    text-align: center;
+    margin: 10px;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+     text-align: center; 
+}
+nav>ul>li>a{
+     text-decoration: none;
+    color: black;
+    margin: 10px; 
+    margin-bottom: 5px;
+}
+hr{
+    width: 94%;
+    margin-left: 25px;
+    margin-top: 15px;
+} 
+.pricing1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 45px;
+}
+p{
+    text-align: center;
+    padding: 5px;
+    font-size: 122%;
+    margin-left: 20px;
+} 
+h1{
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+span{
+    color: gray;
+    margin: 7px;
+}
+.free, .pro{
+    display: inline-block;
+    width: 44.2%;
+    margin: 10px;
+}
+.free{
+    margin:10px 25px;
+}
+.enter{
+    margin: 10px 25px; 
+}
+.free,.pro,.enter{
+    border: 1px solid;
+    padding: 0px;
+}
+h4{
+    text-align: center;
+    font-size: 150%;
+}
+h4.hfree{
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    margin: 215x;
+    padding: 10px;
+    background-color: #F7F3F3;
+}
+button{
+    margin: 10px 10px 10px;
+    width:93%;
+    color:#428BEB;
+    border: #428BEB solid;
+    height: 39px;
+    font-size: 120%;
+    border-radius: 4px;
+    padding: 7px 12px;
+    background-color: white;
+}          
+button.get{
+    margin: 10px 10px 10px;
+    width:97%;
+    color:white;
+    border: #0D7DD3 solid;
+    height: 39px;
+    border-radius: 4px;
+    padding: 7px 12px;
+    background-color:#428BEB;
+} 
+.pro>button.get{
+    width: 94%;
+}  
+.foot1{
+    margin: 20px 30px 10px;
+    color: #ACA8A8;
+}
+.feature>ul, .resource>ul, .about>ul{
+    list-style-type: none;
+    color: #ACA8A8;
+}
+.feature, .resource{
+    display: inline-block;
+}
+.feature {
+    margin-left: 30px;
+}
+.feature h2{
+    margin-left: 0px;
+}
+.feature>ul>li{
+    padding: 2px;
+}
+.resource{
+    float: right;
+    margin-right: 230px;
+}
+.resource h2{
+    margin-left: 0px;
+}
+    .resource>ul>li{
+        padding: 2px;
+    }
+.about{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.about h2{
+    margin-left: 0px;
+}
+.about>ul>li{
+    padding: 2px;
+}
+
+
+            
+
