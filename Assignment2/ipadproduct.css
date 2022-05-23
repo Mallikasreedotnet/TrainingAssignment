@@ -6,7 +6,6 @@
 header>h4{
     text-align: center;
     margin: 10px;
-    
 }
 nav>ul{
     list-style-type: none;
@@ -19,17 +18,12 @@ nav>ul>li>a{
     color: black;
     margin: 10px; 
     margin-bottom: 5px;
-      /*display: inline;
-    margin: 5px; */
-    
 }
 hr{
-    /* margin: 15px 150px 0px 100px; */
     width: 94%;
     margin-left: 25px;
     margin-top: 15px;
 } 
-
 h3{
     text-align: center;
     margin-top: 20px;
@@ -63,12 +57,10 @@ span{
 }
 .free,.pro,.enter{
     border: 1px solid;
-    /* margin: 7px 90px; */
     padding: 0px;
 }
 h4{
     text-align: center;
-
 }
 h4.hfree{
     border-bottom: 1px solid black;
@@ -99,7 +91,6 @@ button.get{
 } 
 .pro>button.get{
     width: 94%;
-
 }  
 .foot1{
     margin: 20px 30px 10px;

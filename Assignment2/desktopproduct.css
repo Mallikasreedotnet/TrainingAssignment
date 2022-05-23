@@ -7,11 +7,10 @@ header>h4{
     margin-left: 25px;
     margin-top: 10px;
 }
-.mallika{
+.main1{
     display: flex;
     justify-content: space-between;
 }
-
 nav>ul{
     list-style-type: none;
     display: flex;
@@ -21,14 +20,13 @@ nav>ul{
      margin-top: 10px;
 }
 nav>ul>li>a{
-    
      text-decoration: none;
     color: black;
     margin: 10px;
 }
 hr{
-    width: 94%;
-    margin-left: 25px;
+    width: 95%;
+    margin-left: 20px;
     margin-top: 10px;
 } 
 h3{
@@ -51,7 +49,7 @@ span{
     color: gray;
     margin: 7px;
 }
-.sree{
+.main2{
     display: flex;
 }
  .free, .pro, .enter{
@@ -65,7 +63,6 @@ span{
 }
 h4{
     text-align: center;
-
 }
 .free p{
     text-align: center;
@@ -113,31 +110,32 @@ button.get{
     margin: 20px 30px 10px;
     color: #ACA8A8;
 }
-.foot1, .chinna{
-    display: inline;
-}
-.chinna{
+.mart{
     display: flex;
+    justify-content: flex-start;
+}
+.main3{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 50px;
 }  
 .feature>ul, .resource>ul, .about>ul{
     list-style-type: none;
     color: #ACA8A8;
 }
-/* .feature, .resource{
-    display: inline-block;
-} */
 .feature {
     margin-left: 30px;
 }
 .feature h1{
-    margin-left: -5px;
+    margin-left: 2px;
 }
 .feature>ul>li{
     padding: 2px;
+    
 }
 .resource{
     float: right;
-    margin-right: 230px;
+    margin-left: 120px;
 }
 .resource h1{
     margin-left: 1px;
@@ -145,13 +143,13 @@ button.get{
     .resource>ul>li{
         padding: 2px;
     }
-/* .about{
-    margin-top: 10px;
-    margin-left: 30px;
+ .about{
+    margin-left: 19%;
 }
 .about h1{
-    margin-left: -660px;
+    margin-left: 20px;
 }
 .about>ul>li{
+    margin-left: 20px;
     padding: 2px;
-} */
+}
