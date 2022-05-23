@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header>h4{
+    text-align: center;
+    margin: 10px;
+    
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+     text-align: center; 
+}
+nav>ul>li>a{
+     text-decoration: none;
+    color: black;
+    margin: 10px; 
+      /*display: inline;
+    margin: 5px; */
+    
+}
+hr{
+    margin: 15px 98px 0px 90px;
+    width: 69%;
+    
+} 
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+p{
+    text-align: center;
+    margin-right: 90px;
+    margin-left: 90px;
+    padding: 2px;
+} 
+h1{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    color: gray;
+    margin: 5px;
+}
+.free,.pro,.enter{
+    border: 1px solid;
+    margin: 7px 90px;
+    padding: 0px;
+}
+h4{
+    text-align: center;
+}
+h4.hfree{
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    margin: 0px;
+    padding: 5px;
+    background-color: #F3F3F3;
+}
+button{
+    margin: 10px 10px 10px;
+    width:95%;
+    color:#0D7DD3;
+    border: #0D7DD3 solid;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+}          
+button.get{
+    margin: 10px 10px 10px;
+    width:95%;
+    color:white;
+    border: #0D7DD3 solid;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color:#3838DD;
+}   
+.foot1{
+    margin: 20px 90px 20px;
+    color: #ACA8A8;
+}
+/* .feature>h1, .resource>h1, .about>h1{
+    text-align: left;
+    margin-left: 90px;
+}
+.feature>ul>li, .resource>ul>li, .about>ul>li{
+    margin-left: 90px;
+    color: #ACA8A8;
+
+} */
+
+.feature>ul, .resource>ul, .about>ul{
+    list-style-type: none;
+    color: #ACA8A8;
+
+}
+.feature, .resource{
+    display: inline-block;
+}
+.feature {
+    margin-left: 90px;
+}
+.feature h1{
+    margin-left: -5px;
+}
+
+.resource{
+    float: right;
+    margin-right: 110px;
+}
+.about{
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.about h1{
+    margin-left: -400px;
+}
+/* .feature, .resource, .about{
+    width: 40%;
+    border: 1PX sol ;
+    height: 200px;
+} */
+
+            
+

@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header>h4{
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.mallika{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+     text-align: right; 
+     margin-right: 25px;
+     margin-top: 10px;
+}
+nav>ul>li>a{
+    
+     text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+hr{
+    width: 94%;
+    margin-left: 25px;
+    margin-top: 10px;
+} 
+h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+p{
+    text-align: center;
+    margin-right: 175px;
+    margin-left: 170px;
+    padding: 3px;
+} 
+h1{
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+span{
+    color: gray;
+    margin: 7px;
+}
+.sree{
+    display: flex;
+}
+ .free, .pro, .enter{
+     display: inline-block;
+    width: 29%;
+    margin: 19px;
+} 
+.free,.pro,.enter{
+    border: 1px solid;
+    padding: 0px;
+}
+h4{
+    text-align: center;
+
+}
+.free p{
+    text-align: center;
+    margin: 5px;
+}
+.pro p{
+    text-align: center;
+    margin: 5px;
+}
+.enter p{
+    text-align: center;
+    margin: 5px;
+}
+h4.hfree{
+    border-bottom: 1px solid black;
+    margin-top: 0px;
+    margin: 150x;
+    padding: 5px;
+    background-color: #F7F3F3;
+}
+button{
+    margin: 10px 10px 10px;
+    width:93%;
+    color:#428BEB;
+    border: #428BEB solid;
+    height: 36px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: white;
+}          
+button.get{
+    margin: 10px 10px 10px;
+    width:94%;
+    color:white;
+    border: #428BEB solid;
+    height: 36px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color:#428BEB;
+} 
+.pro>button.get{
+    width: 94%;
+}
+.foot1{
+    margin: 20px 30px 10px;
+    color: #ACA8A8;
+}
+.foot1, .chinna{
+    display: inline;
+}
+.chinna{
+    display: flex;
+}  
+.feature>ul, .resource>ul, .about>ul{
+    list-style-type: none;
+    color: #ACA8A8;
+}
+/* .feature, .resource{
+    display: inline-block;
+} */
+.feature {
+    margin-left: 30px;
+}
+.feature h1{
+    margin-left: -5px;
+}
+.feature>ul>li{
+    padding: 2px;
+}
+.resource{
+    float: right;
+    margin-right: 230px;
+}
+.resource h1{
+    margin-left: 1px;
+}
+    .resource>ul>li{
+        padding: 2px;
+    }
+/* .about{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.about h1{
+    margin-left: -660px;
+}
+.about>ul>li{
+    padding: 2px;
+} */
