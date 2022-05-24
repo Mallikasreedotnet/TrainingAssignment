@@ -159,9 +159,9 @@ button.get{
 .resource h1{
     margin-left: -30px;
 }
-    .resource>ul>li{
-        padding: 2px;
-    }
+.resource>ul>li{
+   padding: 2px;
+}
  .about{
     margin-left: 25%;
 }
