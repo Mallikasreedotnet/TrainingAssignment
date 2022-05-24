@@ -48,6 +48,7 @@ span{
 }
 .free,.pro,.enter{
     border: 1px solid;
+    border-color: lightgray;
     margin: 8px 15px;
     padding: 0px;
 }
@@ -57,8 +58,10 @@ h4{
 }
 h4.hfree{
     border-bottom: 1px solid black;
+    border-bottom-color: lightgray;
     margin-top: 10px;
     margin: 0px;
+    color: #575353;
     padding: 5px;
     background-color: #F3F3F3;
 }

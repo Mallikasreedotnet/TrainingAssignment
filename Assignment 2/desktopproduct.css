@@ -16,7 +16,7 @@ nav>ul{
     display: flex;
     justify-content: right;
      text-align: right; 
-     margin-right: 25px;
+     margin-right: 120px;
      margin-top: 10px;
 }
 nav>ul>li>a{
@@ -29,7 +29,7 @@ nav>ul>li>a{
     margin-left: 0px;
 }
 hr{
-    width: 77%;
+    width: 73%;
     margin-left: 120px;
     margin-top: 10px;
 } 
@@ -47,8 +47,8 @@ p{
 .para{
     text-align: center;
     font-size: 100%;
-    width: 55%;
-    margin: 0% 24%;
+    width: 59%;
+    margin: 0% 20%;
     padding: 3px;
 }
 h1{
@@ -65,11 +65,12 @@ span{
 }
  .free, .pro, .enter{
      display: inline-block;
-    width: 29%;
+    width: 27%;
     margin: 19px;
 } 
 .free,.pro,.enter{
     border: 1px solid;
+    border-color: lightgray;
     padding: 0px;
 }
 h4{
@@ -91,6 +92,8 @@ h4{
 h4.hfree{
     border-bottom: 1px solid black;
     margin-top: 0px;
+    border-bottom-color: lightgray;
+    color: #575353;
     margin: 200x;
     padding: 5px;
     background-color: #F7F3F3;
