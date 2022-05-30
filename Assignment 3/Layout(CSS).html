@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        @media screen and (min-width:300px) and (max-width:768px){
+            .navigation>ul>li{
+                display: none;
+            }
+            .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(231, 231, 231);
+            margin-left: -10px;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        .header ul li{
+            padding-right: 15px;
+        }
+        .header h4{
+            padding-left: 10px;
+        }
+        .header .icons{
+            margin-right: 20px;
+        }
+        .header i{
+            padding: 3px;
+        }
+        .row{
+            margin-top: 50px;
+        }
+        .main{
+            margin-right: 10px;
+        }
+        .footer{
+            margin-right: 10px;
+        }
+        .footer1{
+            margin-right: 10px;
+        }
+        .col1>img{
+            margin: 30px 0px 0px 0px;
+        }
+        .circle{
+            display: flex;
+        }
+        .circle>img{
+            border-radius: 50%;
+            width: 20%;
+            height: 20%;
+        }
+        .circle>h3{
+            margin-right: 40px;
+            margin-top: 10px;
+        }
+        .p1{
+            color: #929191;
+        }
+        .border{
+            border: 1px solid #ccc;
+        }
+        .border-bottom{
+            border-bottom: 1px solid #ccc;
+        }
+        .col4{
+            margin-top: 50px;
+        }
+        .h{
+            margin-left: 20px;
+        }
+        .para{
+            margin-left: -10px;
+        }
+        .number{
+            display: flex;
+            align-items: center;
+        }
+          .num{
+            font-size: 70px;
+            color: #F5F4F4;
+          }
+          .footer1{
+            background-color:#1f1e1e;
+            color: #929191;
+            
+            padding-top: 30px;
+            margin-top: 20%; 
+        }
+        .footer{
+            background-color: #000000;
+            color: #929191;
+            padding-bottom: 10px;
+            margin-top: -20px;
+            padding-top: 10px;
+        }
+        .footer i, .footer span{
+            color: #ffffff;
+        }
+        .footer{
+            background-color: #181717;
+        }
+        .text, .icon1{
+            text-align: center;
+        }
+        .icon3{
+            text-align: end;
+            margin-right: 10px;
+        }
+        .footer i{
+            border: 1px solid #252323;
+            background-color: #252323;
+            border-radius: 50%;
+            padding: 10px; 
+        }
+        .footer .icon3 i{
+            background-color: #252323;
+            border-radius: 10%;
+            padding: 10px; 
+        }
+        ul>li{
+            list-style-type: none;
+        }
+        li{
+            margin-right: 20px;
+        }
+        .menu-class .menu1{
+            margin-right: 70px;
+        }
+        .p2{
+            color: #ccc;
+        }
+        .about{
+            margin-left: 5px;
+        }
+        .about>h3{
+            color: white;
+        }
+        .p3{
+            text-decoration: underline;
+        }
+        .menu{
+            display: flex;
+            padding-left: 10px;
+        }
+        .menu, .menu1{
+            margin-right: 60px;
+        }
+        .menu1>ul>li{
+            padding-bottom: 4px;
+            margin-left:-40px ;
+        }
+        .menu2>ul>li{
+            padding-bottom: 4px;
+        }
+        .nav, .cat, .post{
+           color: white;
+        }
+        .cat{
+            margin-left: 30px;
+        }
+        .about, .about1{
+            padding-left:10px;
+            padding-bottom: 40px;
+            padding-top: 40px; 
+        }
+        .recent{
+            display: flex;
+            align-items: center;
+        }
+        .recent img{
+            margin-right: 10px;
+        }
+    }
+     @media screen and (min-width:769px) {
+            .icon .d-lg-none{
+            display: none;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(231, 231, 231);
+            margin-right:-20px;
+        }
+        .navigation>ul>li{
+            list-style-type: none;
+            display: inline;
+            padding: 5px;
+        }
+        .icon>i{
+            padding: 5px;
+        }
+        .icon{
+            margin-right: 80px;
+        }
+        .menu{
+                padding-top: 40px;
+            }
+            .header{
+                justify-content: space-around;
+            }
+            .menu{
+            display: flex;
+            padding-left: 10px;
+        }
+        b{
+            color: white;
+        }
+        ul>li{
+            list-style-type: none;
+        }
+        .cat{
+            margin-left: 40px;
+            margin-top: -20px;
+        }
+        .nav{
+            margin-left: 40px;
+            margin-top: -20px;
+        }
+        .menu1>ul>li{
+            padding-bottom: 4px;
+            margin-right: 40px;
+        }
+        .menu2>ul>li{
+            padding-bottom: 4px;
+        }
+            .circle{
+            display: flex;
+        }
+        .circle>img{
+            border-radius: 50%;
+            width: 20%;
+            height: 20%;
+        }
+        .circle>h3{
+            margin-right: 100px;
+        }
+        .p1{
+            color: #929191;
+        }
+        .border{
+            border: 1px solid #ccc;
+        }
+        .border-bottom{
+            border-bottom: 1px solid #ccc;
+        }
+        .col4{
+            margin-top: 50px;
+        }
+        .h{
+            margin-left: 20px;
+        }
+        .para{
+            margin-left: -10px;
+        }
+        .number{
+            display: flex;
+            align-items: center;
+        }
+       .num{
+          font-size: 70px;
+          color: #F5F4F4;         
+        }
+      .footer1{
+            background-color:#1f1e1e;
+            color: #929191;
+            
+            padding-top: 30px;
+            margin-top: 5%; 
+        }
+        .footer-div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer{
+            padding-left: 170px;
+            background-color: #000000;
+            color: #929191;
+            padding-bottom: 10px;
+            margin-top: 0px;
+            padding-top: 10px;
+            width: 89.1%;
+        }
+        .footer i{
+            border: 1px solid #252323;
+            background-color: #252323;
+            border-radius: 50%;
+            padding: 10px; 
+            padding-left: -100px;
+        }
+        .footer .icon3 i{
+            background-color: #252323;
+            border-radius: 10%;
+            padding: 10px; 
+        }
+            .p2{
+            color: #ccc;
+        }
+        .about{
+            margin-left: 5px;
+        }
+        .about>h3{
+            color: white;
+        }
+        .p3{
+            text-decoration: underline;
+        }
+        .recent{
+            display: flex;
+            align-items: center;
+        }
+        .recent img{
+            margin-right: 10px;
+        }
+        .main{
+            width: 80%;
+            padding: 5% 10%;
+        }
+        .col1, .col2, .col3, .col4{
+            float: left;
+            width: 31%;
+            padding-right: 20px;
+            margin-top: 50px;
+        }
+        .col2, .col3, .col4{
+            float: left;
+            width: 19%;
+            padding-right: 20px;
+        }
+        .main::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .footer1{
+            width: 81%;
+            padding: 5% 10%;
+        }
+        .nav, .cat, .post{
+           color: white;
+        }
+        .about, .menu, .about1{
+            float: left;
+            width: 30%;
+        }
+        .post, .recent{
+            margin-left: 20px;
+        }
+        .footer1::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .footer i, .footer span{
+            color: #ffffff;
+        }
+        .footer{
+            background-color: #181717;
+        }
+        .icon3{
+            text-align: end;
+            margin-right: 10px;
+        }
+        .col1, .col2{
+            border-right: 1px solid #ccc;
+            margin-right: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <h4 class="head">ZenBlog</h4>
+         <nav class="navigation">
+             <ul>
+                <li>Blog</li>
+                <li>Single Post</li>
+                <li>Categories</li>
+                <li>About</li>
+                <li>Contact</li>
+             </ul>
+         </nav>
+         <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars d-lg-none"></i>
+         </div>
+        </div>
+        <div class="main">
+            <div class="col1">
+                <img src="images/cat1.jpg" width="100%">
+                <p class="p1">CULTURE • JUL 5TH '22</p>
+                <h1>11 Work From Home </h1>
+                <h1>Part-Time Jobs You Can</h1>
+                <h1>Do Now</h1>
+                <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi atque eveniet, quo, praesentium dignissimos</p>
+                <div class="circle">
+                    <img src="images/cat1.jpg">
+                    <h3>Cameron Williamson</h3>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="row">
+                    <img src="images/cat2.jpg" width="100%">
+                    <p class="p1">SPORT . JUL 5TH '22</p>
+                    <h3 class="h3">Let's Get Back to Work, New York</h3>
+                </div>
+                <div>
+                    <img src="images/cat2.jpg" width="100%">
+                    <p class="p1">FOOD . JUL 17TH '22</p>
+                    <h3 class="h3">How to Avoid Distraction and Stay Focused During Video Calls?</h3>
+                </div>
+                <div>
+                    <img src="images/cat2.jpg" width="100%">
+                    <p class="p1">DESIGN . MAR 15TH '22</p>
+                    <h3 class="h3">Why Craigslist Tampa Is One of The Most Interesting Places On the Web?</h3>
+                </div>
+            </div>
+            <div class="col3">
+                <div>
+                    <img src="images/cat3.jpg" width="100%">
+                    <p class="p1">BUSINESS . JUL 5TH '22</p>
+                    <h3 class="h3">6 Easy Steps To Create Your Own Cute Merch For Instagram</h3>
+                </div>
+                <div>
+                    <img src="images/cat3.jpg" width="100%">
+                    <p class="p1">TECH . MAR 1ST '22</p>
+                    <h3 class="h3">10 Life-Changing Hacks Every Working Mom Should Know</h3>
+                </div>
+                <div>
+                    <img src="images/cat3.jpg" width="100%">
+                    <p class="p1">TRAVEL . JUL 5TH '22</p>
+                    <h3 class="h3">5 Great Startup Tips for Female Founders</h3>
+                </div>
+            </div>
+            <div class="col4">
+                <div class="border">
+                    <div class="border-bottom">
+                        <h3 class="h">Trending</h3>
+                    </div>
+                    <div class="border-bottom">
+                        <div class="number">
+                           <div class="num">
+                              <b>1</b>
+                           </div>
+                           <div class="para">
+                              <p>The Best Homemade Masks for Face(keep the Pimples Away)</p>
+                              <p class="p1">Jane Cooper</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom">
+                        <div class="number">
+                           <div class="num">
+                              <b>2</b>
+                           </div>
+                           <div class="para">
+                              <p>17 Pictures of Medium Length Hair in Layers That WILL Inspire Your New Haircut</p>
+                              <p class="p1">Wade Warren</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom">
+                        <div class="number">
+                           <div class="num">
+                              <b>3</b>
+                           </div>
+                           <div class="para">
+                              <p>13 Amazing Poems from Shel Silversteinin with Valuable Life Lessons</p>
+                              <p class="p1">Esther Howard</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="border-bottom">
+                        <div class="number">
+                          <div class="num">
+                             <b>4</b>
+                          </div>
+                          <div class="para">
+                             <p>9 Half/half-down Hairstyles for Long and Medium Hair</p>
+                             <p class="p1">Cameron Williamson</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="num">
+                            <b>5</b>
+                        </div>
+                        <div class="para">
+                            <p>Life Insurance And Pregnancy: A Working Mom's Guide</p>
+                            <p class="p1">Jenny Wilson</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <footer>
+               <div class="col5">
+                    <div class="footer1">
+                        <div class="about">
+                            <h3>About ZenBlog</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias delectus commodi quas. 
+                                        Dignissimos provident consequatur, odio sapiente nesciunt exercitationem autem, iure quam 
+                                        dolorum accusantium minima necessitatibus suscipit ducimus tenetur esse!</p>
+                            <p class="p3">Learn More</p>
+                        </div>
+                        <div class="menu">
+                            <div class="menu1">
+                                <h3 class="nav">Navigation</h3>
+                                <ul>
+                                    <li>&gt;Blog</li>
+                                    <li>&gt;Categories</li>
+                                    <li>&gt;Single Post</li>
+                                    <li>&gt;About us</li>
+                                    <li>&gt;Contact</li>
+                                </ul>
+                            </div>
+                            <div class="menu2">
+                                <h3 class="cat">Categories</h3>
+                                <ul>
+                                    <li>&gt;Business</li>
+                                    <li>&gt;Culture</li>
+                                    <li>&gt;Sport</li>
+                                    <li>&gt;Food</li>
+                                    <li>&gt;Politics</li>
+                                    <li>&gt;Celebrity</li>
+                                    <li>&gt;Startups</li>
+                                    <li>&gt;Travel</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="about1">
+                            <h3 class="post">Recent Posts</h3>
+                            <div class="recent">
+                                <div>
+                                    <img src="images/cat1.jpg" width="70" height="70">
+                                </div>
+                                <div>
+                                    <p class="p1">CULTURE . JUL 5TH '22</p>
+                                    <p class="p2">5 Great Startup Tips for Female Founders</p>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <div>
+                                    <img src="images/cat2.jpg" width="70" height="70">
+                                </div>
+                                <div>
+                                    <p class="p1">CULTURE . JUL 5TH '22</p>
+                                    <p class="p2">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</p>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <div>
+                                    <img src="images/cat3.jpg" width="70" height="70">
+                                </div>
+                                <div>
+                                    <p class="p1">CULTURE . JUL 5TH '22</p>
+                                    <p class="p2">Life Insurance And Pregnancy: A Working Mom's Guide</p>
+                                </div>
+                            </div>
+                            <div class="recent">
+                                <div>
+                                    <img src="images/cat1.jpg" width="70" height="70">
+                                </div>
+                                <div>
+                                    <p class="p1">CULTURE . JUL 5TH '22</p>
+                                    <p class="p2">How to Avoid Distraction and Stay Focused During Video Calls?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer-div">
+                        <div class="text">
+                            <p>&copy;Copyright ZenBlog. All Rights Reserved</p>
+                            <p>Designed by <span>BootstrapMade</span></p>
+                        </div>
+                        <div class="icon1">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-skype"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-solid fa-arrow-up  rounded p-3 bg-dark"></i>
+                        </div>
+                        </div>
+                    </div>
+               </div>
+            </footer>
+        
+    </div>
+</body>
+</html>
