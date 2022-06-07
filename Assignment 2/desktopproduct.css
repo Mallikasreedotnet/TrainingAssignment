@@ -7,7 +7,7 @@ header>h4{
     margin-left: 25px;
     margin-top: 10px;
 }
-.main1{
+.header{
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +33,7 @@ hr{
     margin-left: 120px;
     margin-top: 10px;
 } 
-.pricing1{
+.heading{
     text-align: center;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -60,7 +60,7 @@ span{
     color: gray;
     margin: 7px;
 }
-.main2{
+.card{
     display: flex;
 }
  .free, .pro, .enter{
@@ -129,11 +129,11 @@ button.get{
     display: flex;
     justify-content: flex-start;
 }
-.main2{
+.card{
     width: 80%;
     margin-left: 10%;
 }
-.main3{
+.foot{
     display: flex;
     margin-top: 15px;
     margin-left: -30px;
