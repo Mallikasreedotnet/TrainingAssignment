@@ -1,0 +1,55 @@
+
+*,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+input{
+    display: block;
+    width:350px;
+    margin: 10px;
+    padding: 5px;
+    }
+h4{
+    margin: 10px;
+}
+hr{
+    display: none;
+}
+p.country{
+    margin-left: 5px;
+}
+textarea {
+    display: block;
+    padding: 5px;
+    width: 93%;
+    margin: 10px;
+}
+.country{
+    display: block;
+    width: 350px;
+    padding: 5px;
+    margin: 10px;
+}
+input[type=submit]{
+    background-color: green;
+    color: white;
+    margin: 10px;
+    margin-right: 11px;
+    width: 93.5%;
+    height: 50px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+p.note{
+    margin-left: 10px;
+}
+input{
+    border: 1px solid;
+}
+
+
+
+
+
+

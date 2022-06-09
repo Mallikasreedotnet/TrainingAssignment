@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h4{
+    margin:5px 0px 10px 0px;
+}
+.Contact, .Address
+{
+    display: block;
+    float: left;
+}
+.Contact{
+    width: 39%;
+    margin: 7px;
+    margin-bottom: 10px;
+}
+.Address
+{
+    width: 59%;
+    margin: 5px;
+}
+.Contact input{
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 90%;
+}
+.Address input{
+    display: inline-block;
+ margin: 5px;
+ padding: 5px;
+}
+.Products, .Note{
+    display: inline;
+    float: left;
+}
+.Products{
+    width: 49%;
+    margin: 7px;
+    padding: 5px;
+}
+.Products input{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+.Note{
+    width: 49%;
+    margin-top: 11px;
+}
+input[type=submit]{
+    background-color: green;
+    color: white;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+.item1, .item2, .item3{
+    width: 62%
+}
+.city, .state, .pincode{
+    display: inline;
+    width: 43.7%;
+    margin: 7px;
+    padding: 5px;
+}
+.country{
+    width: 45.2%;
+    margin: 7px;
+    padding:5px; 
+}
+.street1{
+    display: block;
+    width: 91%;
+}
+input[placeholder="Street line 2"]{
+    display: none;
+}
+select{
+    margin: 7px;
+    padding: 5px;
+   width:400%;
+}
+.Address p{
+    float: left;
+    margin-left: 48%;
+    margin-top: 5px;
+}
+.note{
+    margin: 7px;
+    
+}
+ p.note{
+    margin-left: 15px;
+} 
+hr{
+    width: 95%;
+    margin-bottom: 15px;
+}
+hr.note{
+    width: 91%;
+}
+hr.product{
+    width: 100%;
+}
+hr.address{
+    width: 94%;
+}
+.container{
+    padding: 20px;
+}
+textarea{
+    width: 88.5%;
+    margin: 15px;
+    height: 100px;
+}
+input{
+    border: 1px solid;
+}

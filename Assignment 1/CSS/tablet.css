@@ -1,0 +1,73 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+input, select{
+    padding: 5px;
+}
+input, select, textarea{
+    border: 1px solid;
+}
+.Contact input
+{
+    width: 46%;
+}
+h4{
+    margin: 30px 0px 15px 20px;
+}
+hr{
+    margin: 0px 10px 15px;
+}
+.fname, .email
+{
+    margin: 10px 5px 10px 15px;
+}
+.street1, .street2
+{
+    display: inline-block;
+    width: 94.8%;
+    margin: 10px 15px;
+    
+}
+.city, .state, .pincode{
+    width: 46%;
+}
+select{
+    width: 47.6%;
+}
+.city, .pincode
+{
+    margin:10px 5px 10px 15px;
+}
+.Address p
+{ 
+    float: right;
+    margin-right: 40.8%;
+}
+.item1, .item2, .item3
+{
+    width: 70%;
+    margin:10px 5px 10px 15px;
+}
+.Note p
+{
+   margin: 2px 0px 10px 15px;
+}
+textarea
+{
+    width: 96%;
+    margin:10px 5px 10px 15px;
+}
+input[type=submit]{
+    background-color: green;
+    color: white;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+    
+
+

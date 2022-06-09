@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (min-device-width:300px) and (max-device-width:766px)" href="CSS/mobilemode.css"/>
+    <link rel="stylesheet" media="screen and (min-device-width:767px) and (max-device-width:1024px)" href="CSS/tablet.css"/>
+    <link rel="stylesheet" media="screen and (min-device-width:1280px)" href="CSS/desktop.css"/>
+</head>
+<body>
+    <div class="container">
+        <form id="registration from" action="" method="post">
+            <div class="Contact">
+                <h4>CONTACT INFORMATION </h4>
+                <hr class="contact">
+                <label for="First Name"></label>
+                <input type="text" placeholder="First Name *" minlength="3" maxlength="10" required class="fname">
+                
+                <label for="Last Name"></label>
+                <input type="text" placeholder="Last Name *" minlength="3" maxlength="10" required class="lname">
+                
+                <label for="Email"></label>
+                <input type="mail" pattern=".+@globex\.com|.+@gmail\.com" placeholder="Email *" required class="email">
+                
+                <label for="Phone"></label>
+                <input type="tel" pattern="[0-9][10]" placeholder="Phone" maxlength="10"  required class="phone">
+            </div>
+            <div class="Address">
+                <h4>ADDRESS</h4>
+                <hr class="address">
+                <label for="Street line 1"></label>
+                <input type="text" placeholder="Street line 1 *" required class="street1">
+                        
+                <label for="Street line 2"></label>
+                <input type="text" placeholder="Street line 2" class="street2">
+                        
+                <label for="City"></label>
+                <input type="text" placeholder="City *" required class="city">
+                        
+                <label for="State/Province"></label>
+                <input type="text" placeholder="State/Province *" required class="state">
+                        
+                <label for="Postal/Zip code"></label>
+                <input type="text" pattern="[0-9][5]" placeholder="Postal/Zip code *" required class="pincode">
+                <select class="country">
+                    <option value="">--Please Select--</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Austalia">Australia</option>
+                    <option value="Canada">Canada</option>
+                    <option value="India">India</option>
+                    <option value="Island">Island</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Singapure">Singapure</option>
+                </select>
+                    <p class="country">Country *</p>
+          </div>
+            <div class="Products">
+                <h4>PRODUCTS</h4>
+                <hr class="product">
+                <label for="Item1"></label>
+                <input type="text" placeholder="item #1 name" class="item1">
+                <label for="Item1"></label>
+                <input type="text" placeholder="item #1 quality" class="quy1">
+                <label for="Item2"></label>
+                <input type="text" placeholder="item #2 name" class="item2">
+                <label for="Item2"></label>
+                <input type="text" placeholder="item #2 quality" class="quy2">
+                <label for="Item3"></label>
+                <input type="text" placeholder="item #3 name" class="item3">
+                <label for="Item3"></label>
+                <input type="text" placeholder="item #3 quality" class="quy3">
+            </div>
+           <div class="Note">
+              <h4>NOTE</h4>
+              <hr class="note">
+              <p class="note">Additional commands and questions</p>
+              <textarea name="note"  rows="10" cols="30" ></textarea>
+          </div>
+          <input type="submit" value="REQUEST QUOTE">
+     </FORM>
+    </div>
+</body>
+</html>
