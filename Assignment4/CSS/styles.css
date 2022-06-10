@@ -23,8 +23,8 @@
       align-items: center;
   }
   .para{
-      margin-left: 1em;
-      margin-top: 1em;
+      margin-left: 0.5em;
+      margin-top: 0em;
       color: rgb(234, 71, 76);
       font-size: 1em;
   }
@@ -89,6 +89,7 @@
        display: flex;
        background-color:rgb(234, 71, 76) ;
        color: white;
+       width: 50%;
    }
    .recipe p{
        padding-left: 1.5em;
@@ -115,6 +116,7 @@
    }
    .sort i{
        margin-left: 47em;
+       margin-top: 1em;
    }
    input[placeholder="Search recipe"]{
        background-color: rgb(246, 246, 246);
@@ -139,16 +141,18 @@
    }
    .fooditems {
        margin-left: 1em;
-       padding-right: 0em;
+       padding-right: 0.5em;
        border-right: 1px solid white;
    }
-   .fooditems p{
+   .foodtype{
        margin-top: 1.5em;
        margin-bottom: 1em;
+       margin-left: 1em;
    }
-   .nationality p{
+   .nationpara{
        margin-top: 1.5em;
        margin-bottom: 1em;
+       margin-left: 1em;
    }
    .countries{
        margin-left: 15em;
@@ -388,6 +392,12 @@
   input{
       border-radius: 3px;
       border: 1px solid white;
+  }
+  input[type=text]{
+      margin-top: 1em;
+  }
+  label{
+      margin-left: 0em;
   }
   .remove{
       padding-left: 20em;
