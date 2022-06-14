@@ -1,0 +1,662 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@media screen and (min-width:1200px) {
+body {
+    margin: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    background-color: #F3F0F0;
+}
+.banner-container{
+    width: 100%;
+}
+.heading {
+    display: flex;
+    align-items: center;
+   padding-top: 5px;
+    position: absolute;
+    padding-left: 90px;
+}
+.grilled {
+    padding: 50px 7px 30px;
+    color: rgb(234, 71, 76);
+    font-size: 1.2em;
+}
+.nav>ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+ul>li {
+    padding: 50px 90px 20px 5px;
+    /* margin-left: 50px; */
+}
+.banner {
+    display: flex;
+}
+.banner-img {
+    width: 70%;
+}
+.banner-img img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-text {
+    background-color: rgb(234, 71, 76);
+    width: 30%;
+    color: white;
+}
+.banner-text>p {
+    width: 90%;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 1em;
+}
+.banner-text>h1 {
+    margin-left: 20px;
+    font-size: 2em;
+}
+.goto {
+    margin-left: 10px;
+    width: 40%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.goto button {
+    padding-top: 20px;
+}
+.recipe-container{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 50px;
+}
+.recipe-container h2{
+    font-size: 2em;
+    color: #505050;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.left{
+    width: 25%;
+    background-color: rgb(234, 71, 76);
+    padding-bottom: 30px;
+    border-radius: 5px 5px 0px 5px;
+}
+.right{
+    width: 75%;
+    background-color: rgb(234, 71, 76);
+    padding-bottom: 30px;
+}
+.filter-section{
+    display: flex;
+    color: white;
+}
+.filter-recepie,.sort-recepie,.search-recepie{
+    display: flex;
+    align-items: center;
+}
+.filter-recepie{
+    justify-content: space-between;
+    padding:20px 20px;
+}
+.sort-recepie .para{
+    margin-left: 20px;
+    color: rgb(98, 98, 98);
+}
+.sort-recepie select{
+    font-size: 1em;
+    padding: 10px 30px;
+    margin-left: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.search-recepie{
+    font-size: 1.2em;
+}
+.search-recepie input[placeholder="Search recipe"]{
+    border: none;
+    color: black;
+    background-color: #F3F0F0;
+    font-size: 1em;
+    padding: 10px;
+    padding-right: 0px;
+}
+.sort{
+    display: flex;
+    justify-content: space-between;
+    background-color:#F3F0F0;
+    color: black;
+    align-items:flex-start;
+    padding: 10px;
+}
+.food-type{
+    margin: 30px 25px;
+    font-size: 1em;
+}
+.nation{
+    margin: 20px 35px 15px  35px;
+    font-size: 1em;
+}
+.filter{
+    border-right: 1px solid white;
+    padding-bottom: 30px;
+}
+.nationality{
+    display: flex;
+}
+.country-1, .country-2, .country-3{
+    width: 34%;
+    padding: 10px;
+}
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+}
+.checkbox-container label{
+    cursor: pointer;
+    display: flex;
+}
+.checkbox-container input[type="checkbox"]{
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    color: white;
+}
+.checkbox-container label::before{
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: white;
+}
+.checkbox-container input[type="checkbox"]:checked + label::before{
+    content: "\002714";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.cards{
+    width: 23%;
+}
+.food-card1, .food-card2, .food-card3{
+    display: flex;
+    justify-content: space-between;
+    padding-top:50px;
+}
+.cards .desc{
+    padding: 15px;
+    background-color: white;
+    height: 200px;
+}
+.desc .header-two{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #505050;
+    font-weight: 500;
+}
+.cards img{
+    width: 100%;
+    height: auto;
+}
+.paragraph{
+    display: flex;
+    justify-content: space-between;
+}
+.paragraph p{
+    font-size: 0.8em;
+    color: grey;
+}
+.cards-container{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.return {
+    padding-bottom: 50px;
+}
+.top{
+    padding-left: 90px;
+    padding-top: 50px;
+    color: rgb(234, 71, 76);
+    font-size: 20px;
+}
+.details-row{
+    background-color: rgb(234, 71, 76);
+}
+.word{
+   padding: 20px 10px 30px 90px ;
+   color: whitesmoke;
+}
+.word p{
+   width: 35%;
+}
+.word h1{
+   padding-bottom: 20px;
+}
+.details{
+   display: flex;
+   color: white;
+}
+.details{
+border-bottom: 1px solid white;
+width: 89.7%;
+margin-left: 90px;
+}
+#name{
+padding: 10px 20px 10px 10px ;
+}
+.surname{
+   padding-left: 60px;
+   padding-bottom: 30px;
+}
+#surname{
+    padding: 10px 20px 10px 10px ;
+}
+.email{
+   padding-left: 60px;
+}
+#email{
+    padding: 10px 20px 10px 10px ;
+}
+input{
+   border-radius: 3px;
+   border: 1px solid white;
+}
+input[type=text]{
+   margin-top: 10px;
+   width: 100%;
+}
+.remove{
+   padding-left: 200px;
+   padding-top: 40px;
+}
+.namegeorge{
+   display: flex;
+   padding-left: 90px;
+   color: white;
+   padding-top: 20px;
+}
+.add{
+   padding-left: 150px;
+   padding-top: 15px;
+}
+.add button{
+   padding: 15px;
+   padding-left: 70px;
+   padding-right: 70px;
+   background-color: rgb(234, 71, 76);
+   border: 1px solid white;
+   border-radius: 3px;
+   color: white;
+} 
+.send button{
+   width: 10%;
+   background-color: white;
+   border: 1px solid white;
+   height: 20%;
+   margin: 15px 10px 20px 600px;
+   border-radius: 3px;
+}
+.send{
+   padding: 10px 10px 10px 20px;
+}
+.footer{
+    display: flex;
+   padding-top: 30px;
+    padding-bottom: 20px;
+}
+.our{
+ color: rgb(98, 98, 98);
+ padding-left: 90px;
+    width: 90%;
+}
+.information{
+ color: rgb(98, 98, 98);
+   width: 73%;
+}
+.history{
+ color: rgb(98, 98, 98);
+    width: 73%;
+}
+.prawn{
+ color: rgb(98, 98, 98);
+    padding-top: 0px;
+   margin-left: 50px;
+    width: 80%;
+    padding-right: 90px;
+}
+.prawn p{
+ color: rgb(98, 98, 98);
+}
+.more{
+    color: rgb(234, 71, 76);
+    padding-top: 10px;
+     padding-bottom: 20px; 
+}
+.tips{
+ color: rgb(98, 98, 98);
+    width: 55%;
+    margin-left: 30px;
+}
+.help{
+ color: rgb(98, 98, 98);
+    width: 60%;
+    margin-left: 20px;
+}
+}
+
+@media screen and (min-width:300px) and (max-width:576px){
+    body {
+        margin: 0px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        background-color: #F3F0F0;
+    }
+    .heading{
+        padding-left: 0px;
+        display: block;
+        text-align: center;
+    }
+    .heading img{
+        width: 30%;
+      padding-top: 10px;
+    }
+    .grilled {
+        text-align: center;
+        color: rgb(234, 71, 76);
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+    .nav>ul {
+        text-align: center;
+        list-style-type: none;
+    }
+    ul>li {
+        padding: 15px 10px 10px ;
+    }
+    img {
+        width: 100%;
+    }
+    .banner-img {
+        width: 100%;
+    }
+    .banner-text {
+        background-color: rgb(234, 71, 76);
+        color: white;
+    }
+    .banner-text>p {
+        width: 80%;
+        line-height: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        font-size: 1em;
+    }
+    .banner-text>h1 {
+        margin-left: 10px;
+        font-size: 3em;
+    }
+    .goto{
+        margin: 20px;
+        width: 50%;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 3px;
+    }
+    .recipe-container h2{
+        font-size: 1.5em;
+        color: #505050;
+        font-weight: 500;
+        padding: 20px 10px;
+    }
+    .filter-recepie{
+        display: flex;
+        padding: 10px;
+        color: white;
+    }
+    .left{ 
+        background-color: rgb(234, 71, 76);
+        padding-bottom: 30px;
+    }
+    .food-type{
+        padding: 10px;
+        font-size: 1em;
+        color: white;
+    }
+    .filter-recepie i{
+        padding-left: 140px;
+    }
+    .sort{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+        background-color:#F3F0F0;
+        color: black;
+       padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .sort-recepie{
+        display: flex;
+    }
+    .sort-recepie .para{
+        margin-left: 0px; 
+        padding-right: 7px;
+        color: rgb(98, 98, 98);
+    }
+    .sort-recepie select{
+        font-size: 0.9em;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .search-recepie{
+        font-size: 0.9em;
+    }
+    .search-recepie input[placeholder="Search recipe"]{
+        border: none;
+        color: black;
+        background-color: #F3F0F0;
+        font-size: 1em;
+    }
+    .nation{
+        margin: 10px;
+        font-size: 1em;
+        color: white;
+    }
+    .right{
+        background-color: rgb(234, 71, 76);
+        padding-bottom: 30px;
+    }
+    .country-1, .country-2, .country-3{
+        padding: 10px;
+    }
+    .checkbox-container{
+        display: flex;
+        color: white;
+        align-items: center;
+        padding: 7px ;
+    }
+    .checkbox-container label{
+        cursor: pointer;
+        display: flex;
+    }
+    .checkbox-container input[type="checkbox"]{
+        cursor: pointer;
+        opacity: 0;
+        position: absolute;
+        color: white;
+    }
+    .checkbox-container label::before{
+        content: "";
+        width: 1.5em;
+        height: 1.5em;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: 15px;
+        background-color: white;
+    }
+    .checkbox-container input[type="checkbox"]:checked + label::before{
+        content: "\002714";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+    .cards .desc{
+        padding: 10px;
+        background-color: white;
+        height: 180px;
+    }
+    .desc .header-two{
+        font-size: 1.9em;
+        margin: 5px;
+        color: #505050;
+        font-weight: 500;
+    }
+    .cards img{
+        width: 100%;
+        height: auto;
+    }
+    .paragraph{
+        display: flex;
+        justify-content: space-between;
+    }
+    .paragraph p{
+        font-size: 0.8em;
+        color: grey;
+    }
+    .return {
+        padding-bottom: 10px;
+    }
+    .top{
+        padding-left: 10px;
+        padding-top: 10px;
+        color: rgb(234, 71, 76);
+        font-size: 20px;
+    }
+    .details-row{
+        background-color: rgb(234, 71, 76);
+    }
+    .word{
+       padding: 10px;
+       color: whitesmoke;
+    }
+    .word h1{
+       padding-bottom: 20px;
+    }
+    .details{
+       color: white;
+       padding-left: 10px;
+    }
+    .details{
+    border-bottom: 1px solid white;
+    }
+    #name{
+    padding: 10px;
+    }
+    .surname{
+       padding-top: 10px;
+    }
+    #surname{
+        padding: 10px ;
+    }
+    .email{
+       padding-top: 10px;
+    }
+    #email{
+        padding: 10px ;
+    }
+    input{
+       border-radius: 3px;
+       border: 1px solid white;
+    }
+    input[type=text]{
+       margin-top: 10px;
+       width: 80%;
+    }
+    .remove{
+       padding-left: 10px;
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+    .namegeorge{
+       padding-left: 10px;
+       color: white;
+       padding-top: 20px;
+    }
+    .add{
+       padding-left: 20px;
+       padding-top: 15px;
+    }
+    .add button{
+       padding: 15px;
+       padding-left: 40px;
+       padding-right: 40px;
+       background-color: rgb(234, 71, 76);
+       border: 1px solid white;
+       border-radius: 3px;
+       color: white;
+    } 
+    .send button{
+       width: 40%;
+       background-color: white;
+       border: 1px solid white;
+      padding-left: 20px;
+       margin: 25px;
+       border-radius: 3px;
+    }
+    .send{
+       padding: 10px 20px ;
+    }
+    .footer{
+       padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .our{
+     color: rgb(98, 98, 98);
+     padding-left: 10px;
+    }
+    .information{
+     color: rgb(98, 98, 98);
+     padding-bottom: 20px;
+    }
+    .history{
+     color: rgb(98, 98, 98);
+       margin-left: 10px;
+       padding-bottom: 20px;
+    }
+    .prawn{
+     color: rgb(98, 98, 98);
+     padding-bottom: 20px;
+       padding-left: 10px;
+    }
+    .prawn p{
+     color: rgb(98, 98, 98);
+    }
+    .more{
+        color: rgb(234, 71, 76);
+        padding-top: 10px;
+         padding-bottom: 20px; 
+    }
+    .tips{
+     color: rgb(98, 98, 98);
+        margin-left: 10px;
+    }
+    .help{
+     color: rgb(98, 98, 98);
+     padding-bottom: 20px;
+        margin-left: 10px;
+    }
+}
