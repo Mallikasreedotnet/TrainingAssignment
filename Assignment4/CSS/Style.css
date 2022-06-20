@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1201px) {
 body {
     margin: 0px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -25,6 +25,9 @@ body {
     color: rgb(234, 71, 76);
     font-size: 1.2em;
 }
+.icon{
+    display: none;
+}
 .nav>ul {
     display: flex;
     list-style-type: none;
@@ -32,7 +35,6 @@ body {
 }
 ul>li {
     padding: 50px 90px 20px 5px;
-    /* margin-left: 50px; */
 }
 .banner {
     display: flex;
@@ -251,6 +253,12 @@ ul>li {
    display: flex;
    color: white;
 }
+table{
+    border-collapse: collapse;
+}
+table .list-table{
+    width: 10%;
+}
 .details{
 border-bottom: 1px solid white;
 width: 89.7%;
@@ -368,22 +376,32 @@ input[type=text]{
     }
     .heading{
         padding-left: 0px;
-        display: block;
+        display: flex;
         text-align: center;
     }
     .heading img{
-        width: 30%;
+        width: 27%;
       padding-top: 10px;
     }
     .grilled {
-        text-align: center;
+        align-items: center;
         color: rgb(234, 71, 76);
         font-size: 1.2em;
-        padding-top: 10px;
+        padding-top: 30px;
+    }
+   .heading-icon{
+    display: flex;
+    justify-content: space-between;
+   }
+    .icon{
+        padding: 35px;
+        padding-left: 40px;
     }
     .nav>ul {
+        display: none;
         text-align: center;
         list-style-type: none;
+        background-color: rgb(196, 83, 117);
     }
     ul>li {
         padding: 15px 10px 10px ;
@@ -545,7 +563,6 @@ input[type=text]{
         color: rgb(234, 71, 76);
         font-size: 20px;
     }
-   
     .details-row{
         background-color: rgb(234, 71, 76);
     }
@@ -662,7 +679,7 @@ input[type=text]{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:992px){
+@media screen and (min-width:768px) and (max-width:1200px){
     body {
         margin: 0px;
         font-family: 'Roboto Condensed', sans-serif;
@@ -671,24 +688,24 @@ input[type=text]{
     }
     .heading{
         display: flex;
+        justify-content: space-between;
     }
     .heading img{
        width: 15%;
         text-align: center;
         padding-top: 5px;
-      
         padding-left: 10px;
     }
     .grilled {
         padding-top: 60px;
-        padding-left: 490px; 
+        padding-left: 450px; 
         color: rgb(234, 71, 76);
         font-size: 1.2em;
     }
     .nav>ul {
        padding: 20px;
         list-style-type: none;
-        justify-content: end;
+       
     }
     img {
         width: 100%;
@@ -697,13 +714,11 @@ input[type=text]{
         display: inline;
         margin-left: 50px;
     }
-    /* .banner-img {
-        width: 100%;
-    } */
+    .icon{
+        display: none;
+    }
     .banner-img img{
         max-width: 100%;
-        height: 100%;
-        
         object-fit: cover;
     }
     .banner-text {
@@ -789,7 +804,6 @@ input[type=text]{
         color: black;
         background-color: #F3F0F0;
         font-size: 1em;
-       
     }
     .nation{
         margin: 10px;
@@ -838,7 +852,6 @@ input[type=text]{
     }
     .country-1, .country-2, .country-3{
         width: 34%;
-        /* padding: 10px; */
     }
     .cards{
         width: 50%;
@@ -884,7 +897,6 @@ input[type=text]{
         padding-left: 10px;
         padding-top: 10px;
     }
-   
     .details-row{
         background-color: rgb(234, 71, 76);
     }
@@ -899,7 +911,6 @@ input[type=text]{
        padding-bottom: 20px;
     }
     .details{
-       /* display: flex; */
        color: white;
     }
     .details{
@@ -912,15 +923,12 @@ input[type=text]{
     }
     .surname{
         padding-top: 10px;
-       /* padding-left: 10px; */
-       /* padding-bottom: 30px; */
     }
     #surname{
         padding: 10px 20px 10px 10px ;
     }
     .email{
         padding-top: 10px;
-       /* padding-left: 10px; */
     }
     #email{
         padding: 10px 20px 10px 10px ;
@@ -937,15 +945,10 @@ input[type=text]{
         margin-top: 10px;
         width: 100%;
      }
-
-    
     .remove{
         padding: 30px 00px 30px 300px;
-       /* padding-left: 200px;
-       padding-top: 40px; */
     }
     .namegeorge{
-       /* display: flex; */
        padding-left: 20px;
        color: white;
        padding-top: 20px;

@@ -7,23 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/Style.css">
-   
+ 
 </head>
 <body>
     <div class="container">
         <header>
             <!-- header start -->
             <section class="header-container">
+                <div class="heading-icon">
               <div class="heading">
                   <img src="images/logo.png">
                   <p class="grilled">The Grilled Prawn</p>
               </div>
+              <div class="icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
               <div class="nav">
-                  <ul>
-                     <li>RECIPES</li>
-                     <li>DRINKS</li>
-                     <li>DECORATIONS</li>
-                     <li>ABOUT THE GRILLED PRAWN</li>
+                  <ul id="list-items">
+                     <li><a href="#">RECIPES </a></li>
+                     <li><a href="#">DRINKS</a></li>
+                     <li><a href="#">DECORATIONS</a></li>
+                     <li><a href="#">ABOUT THE GRILLED PRAWN</a></li>
                  </ul>
               </div>
             </section>
@@ -288,6 +293,16 @@
                       <p>Our recipe are awesome, sign up to our newsletter and invite friends to join the Gilled Prawn cult</p>
                   </div>
                   <div class="details">
+                    <!-- <table id="list-table">
+                        <thead>
+                            <tr>
+                                <td>S.No</td>
+                                <td>Name</td>
+                                <td>Surname</td>
+                                <td>Email</td>
+                            </tr>
+                        </thead>
+                    </table> -->
                      <div class="name">
                          <label>Name</label><br>
                          <input type="text" id="name" placeholder="Samantha">
@@ -316,7 +331,7 @@
                             <input type="text" id="email" placeholder="george.stone@gmail.com">
                       </div>
                       <div class="add">
-                         <button class="add">Add Friend</button>
+                         <button class="add" onclick="myFunction()">Add Friend</button>
                       </div>
                   </div>
                   <div class="send">
@@ -356,5 +371,6 @@
       </div>
     </section>
     </div>
+    <script src="code.js"></script>
 </body>
 </html>
