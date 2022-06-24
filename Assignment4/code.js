@@ -63,13 +63,13 @@ function validate(){
     if (name.value == "" || surname.value=="" || email.value=="") {
       alert("please fill the details!");
       //event.preventDefault();
-      isValidTrue=false;
+     return isValidTrue=false;
      // return
   }
   else if( (!isNaN(name.value)) || (!isNaN(surname.value)) ){
       alert("fields should not be numbers!");
       //vent.preventDefault();
-        isValidTrue=false;
+       return isValidTrue=false;
      // return
   }
   else if(name.value.length<3 || surName.value.length<3){
@@ -78,7 +78,7 @@ function validate(){
     return  isValidTrue=false;
    //return
 }
-else if(name.value.length>10 || surName.value.length>10){
+else if(name.value.length>30 || surName.value.length>30){
     alert("maximum 30 characters allowed");
     //event.preventDefault();
     return  isValidTrue=false;
