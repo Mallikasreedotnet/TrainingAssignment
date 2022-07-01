@@ -24,7 +24,7 @@ function table() {
                 table = table + `<tr>
             <td>${i + 1}</td>
             <td>${details[i].name}</td>
-            <td>${details[i].surName}</td>
+            <td>${details[i].surname}</td>
             <td>${details[i].email}</td>
             <td><button type="button" class="btn btn-warning" onclick="edit(${i})">Edit</button>  <button type="button" class="btn btn-danger" onclick="deleteData(${i})">Delete</button></td>
            
@@ -53,66 +53,114 @@ function getData(){
 };
 function setData() {
     localStorage.setItem("details", JSON.stringify(details));
+    let name = document.getElementById("name").value = "";
+    let surname = document.getElementById("surname").value ="";
+    let email = document.getElementById("email").value = "";
+
 };
 function validate(){
-    let isvalidTrue=true;
-    let name = document.getElementById("name");
-    let surName=document.getElementById("surname");
-    let email = document.getElementById("email");
+    let isvalidTrue=false;
+    let name = document.getElementById("name").value;
+    let surname=document.getElementById("surname").value;
+    let email = document.getElementById("email").value;
+    let errMsg=document.querySelectorAll(".errorMsg");
 
-    if (name.value == "" || surname.value=="" || email.value=="") {
-      alert("please fill the details!");
-      //event.preventDefault();
-     return isValidTrue=false;
-     // return
-  }
-  else if( (!isNaN(name.value)) || (!isNaN(surname.value)) ){
-      alert("fields should not be numbers!");
-      //vent.preventDefault();
-       return isValidTrue=false;
-     // return
-  }
-  else if(name.value.length<3 || surName.value.length<3){
-    alert("minimum 3 characters needed");
-   // event.preventDefault();
-    return  isValidTrue=false;
-   //return
-}
-else if(name.value.length>30 || surName.value.length>30){
-    alert("maximum 30 characters allowed");
-    //event.preventDefault();
-    return  isValidTrue=false;
-   //return
-  
-}
-else if((!(email.value).endsWith("@gmail.com")) && (!(email.value).endsWith("@qualminds.com"))){
-    alert("allow only gmail and qualminds emails");
-    //event.preventDefault();
-    return  isValidTrue=false;
-    //return
-}
+    if(name==""){
+        errMsg[0].textContent="name can't be empty";
+        return isvalidTrue;
+    }
+    else if(name.length<3){
+        errMsg[0].textContent="Minimum 3 characters needed";
+        return isvalidTrue;
+    }
+    else if(name.length>30){
+        errMsg[0].textContent="Maximum 30 characters allowed";
+        return isvalidTrue;
+    }
+    else if(name.match(/ /g)){
+        errMsg[0].textContent="White spaces are not allowed";
+        return isvalidTrue;
+    }
+    else if (name.match(/[0-9]/g)) {
+        errMsg[0].textContent = "Name should not contains numbers";
+        return isValidTrue;
+    }
+    else if (name.match(/[~ ! @ # $ % ^ & * _ + - = < > ? . , ' " : ; | /]/g)) {
+        errMsg[0].textContent = "Name should not contain any special characters"
+        return isValidTrue;
+    }
+    else {
+        errMsg[0].textContent = "";
+    }
+    
+    if(surname==""){
+        errMsg[1].textContent="name can't be empty";
+        return isvalidTrue;
+    }
+    else if(surname.length<3){
+        errMsg[1].textContent="Minimum 3 characters needed";
+        return isvalidTrue;
+    }
+    else if(surname.length>30){
+        errMsg[1].textContent="Maximum 30 characters allowed";
+        return isvalidTrue;
+    }
+    else if(surname.match(/ /g)){
+        errMsg[1].textContent="White spaces are not allowed";
+        return isvalidTrue;
+    }
+    else if (surname.match(/[0-9]/g)) {
+        errMsg[1].textContent = "Name should not contains numbers";
+        return isValidTrue;
+    }
+    else if (surname.match(/[~ ! @ # $ % ^ & * _ + - = < > ? . , ' " : ; | /]/g)) {
+        errMsg[1].textContent = "Name should not contain any special characters"
+        return isValidTrue;
+    }
+    else {
+        errMsg[1].textContent = "";
+    }
 
-return isvalidTrue;
-}
+    if(email==""){
+        errMsg[2].textContent="email can't be empty";
+        return isvalidTrue;
+    }
+    else if((!email.endsWith(email.match(/@gmail.com/i)))&&!(email.endsWith(emal.endsWith(email.match(/@qualminds.com/i))))){
+        errMsg[2].textContent="gmail and qualminds emails are allowed";
+        return isvalidTrue;
+    }
+    else{
+        errMsg[2].textContent="";
+    }
+    return isvalidTrue=true;
+};
+
 function insert(){
-    let name = document.getElementById("name");
-    let surname=document.getElementById("surname");
-    let email = document.getElementById("email");
-  
+    let name = document.getElementById("name").value;
+    let surname=document.getElementById("surname").value;
+    let email = document.getElementById("email").value;
+    email=email.toLowerCase();
     let data = {
-        name: name.value,
-        surName:surname.value,
-        email: email.value
+        name,
+        surname,
+        email
     };
+   
     if(validate())
     {
-    details.push(data);
-    setData();
-    table();
-    name.value = "";
-    surname.value="";
-    email.value = "";
+        for(i=0;i<details.length;i++){
+           // if(index!=i)
+            if(details[i].email==email){
+                alert("* email allready exist");
+                return false;
+            }
+        }
+        details.push(data);
+        setData();
+        table(); 
+   
     }
+   event.preventDefault();
    
 }
 function deleteData(index){
@@ -130,16 +178,19 @@ function edit(index){
   <div class="name">
         <label>Name</label><br>
         <input type="text" value="${details[index].name}" id="name" placeholder="George">
+        <div class="errorMsg"></div>
   </div>
  <div class="surname">
         <label>Surname</label><br>
-        <input type="text" value="${details[index].surName}" id="surname" placeholder="Stone">
+        <input type="text" value="${details[index].surname}" id="surname" placeholder="Stone">
+        <div class="errorMsg"></div>
   </div>
   <div class="email">
         <label>Email address</label><br>
         <input type="text" value="${details[index].email}" id="email" placeholder="george.stone@gmail.com">
+        <div class="errorMsg"></div>
   </div>
-  <div class="add">
+  <div class="addfriend">
      <button class="add" type="submit" onClick="update(${index})">Updated Details</button>
   </div>
 </div>
@@ -149,43 +200,57 @@ function edit(index){
 }
 
 function update(index) {
-    // event.preventDefault();
-  let name = document.getElementById("name");
-  let surname=document.getElementById("surname");
-  let email = document.getElementById("email");
+    
+    
+  let name = document.getElementById("name").value;
+  let surname=document.getElementById("surname").value;
+  let email = document.getElementById("email").value;
+  email = email.toLowerCase();
+    details[index] = {
+        name,
+        surname,
+        email
+    };
+    if (validate()) {
+        for(i=0;i<details.length;i++){
+            if(index!=i){
+                if(details[i].email==email){
+                    alert("* updated email allready exist");
+                    event.preventDefault();
+                    return false;
+                }
+             }
+         }
+        setData();
+        table();
+       
+        
+    }
+    event.preventDefault();
 
-  details[index] = {
-      name: name.value,
-      surName:surname.value,
-      email: email.value
-  };
-
-//   table();
   let updatedform=`
   <div class="namegeorge" >
         <div class="name">
          <label>Name</label><br>
          <input type="text" id="name" placeholder="George">
+         <div class="errorMsg"></div>
         </div>
         <div class="surname">
             <label>Surname</label><br>
             <input type="text" id="surname" placeholder="Stone">
+            <div class="errorMsg"></div>
         </div>
         <div class="email">
             <label>Email address</label><br>
             <input type="text" id="email" placeholder="george.stone@gmail.com">
+            <div class="errorMsg"></div>
         </div>
-        <div class="add">
+        <div class="addfriend">
             <button class="add" type="submit">Add Friend</button>
         </div>
     </div>
     `;
 
-    if(validate())
-    {
-        setData();
-        table();
-    }
     document.getElementById("form").innerHTML=updatedform;
 
 }

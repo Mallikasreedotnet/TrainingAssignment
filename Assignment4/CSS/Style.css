@@ -301,11 +301,11 @@ input[type=text]{
    color: white;
    padding-top: 20px;
 }
-.add{
+.addfriend{
    padding-left: 150px;
-   padding-top: 15px;
+   padding-top: 20px;
 }
-.add button{
+.addfriend button{
    padding: 15px;
    padding-left: 70px;
    padding-right: 70px;
@@ -567,11 +567,11 @@ input[type=text]{
        color: white;
        padding-top: 20px;
     }
-    .add{
+    .addfriend{
        padding-left: 70px;
        padding-top: 15px;
     }
-    .add button{
+    .addfriend button{
        padding: 15px;
        padding-left: 40px;
        padding-right: 40px;
@@ -846,11 +846,11 @@ input[type=text]{
        color: white;
        padding-top: 20px;
     }
-    .add{
+    .addfriend{
        padding-left: 300px;
        padding-top: 15px;
     }
-    .add button{
+    .addfriend button{
        padding: 15px;
        padding-left: 30px;
        padding-right: 30px;
