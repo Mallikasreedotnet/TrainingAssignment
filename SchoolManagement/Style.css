@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header
+{
+    background-color: lightgray;
+    display: flex;
+}
+.heading-bar{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo img{
+width: 101.2%;
+height: 100%;
+}
+input {
+    all: unset;
+    height: 15%;
+    width: 100%;
+    padding: 8px 50px ;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* .search .fa-solid 
+{
+    position:absolute;
+    top: 45px;
+    right: 250px;
+} */
+.search{
+    margin-left: 20px;
+    padding-left: 50px ;
+}
+.image img{
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    top: 141px;
+  padding-left: 50px;
+    height: 50%;
+    width: 70%;
+}
+aside{
+    width: 20%;
+    height: 100%;
+    background: #000d33;
+    float: left;
+}
+aside h1 img{
+    width: 51px;
+    float: left;
+}
+aside h1 span{
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 6px;
+    color: white;
+}
+aside ul{
+    padding: 5px 0 5px 30px ;
+}
+aside ul li{
+    list-style: none;
+    font-weight: bold;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    max-height: 35px;
+    line-height: 35px;
+    transition: 1s;
+    text-transform: capitalize;
+}
+aside ul:first-child{
+    max-height: 50px;
+}
+aside ul li:hover{
+    background: #d1d1d173;
+} 
+aside ul:first-childli:hover{
+    background: none;
+}
+aside ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+aside ul li a i{
+    width: 30px;
+    padding: 5px;
+    margin-right: 10px;
+}
+aside ul li a i.fa-angle-right{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transition: 0.5s;
+} 
+aside ul li>ul{
+    padding: 1px;
+    margin: 0 0 0 20px;
+}
+aside ul li>ul li{
+    height: 25px;
+    line-height: 20px;
+    font-size: 15px;
+    padding: 1px 1px 1px 20px;
+    font-weight: normal;
+    margin:5px;
+    color:#fff0f0;
+    cursor:pointer;
+}
+aside ul li>ul li a,
+aside ul li:target>ul li a{
+    background: transparent;
+}
+aside ul li:target{
+    max-height: 300px;
+    border-radius: 5px 0px 0px 5px;
+}
+aside ul li:target a{
+    color: #444;
+    display: inherit;
+    background: white;
+}
+aside ul li:target a i.fa-angle-right{
+    transform: rotate(90deg);
+    top: 10px;
+}
+aside ul li:target:hover{
+    background: initial;
+}
